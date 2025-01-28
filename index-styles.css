@@ -1,0 +1,191 @@
+:root {
+    --background-color : #1d2225;
+    --secondary-background-color: #292f34;
+    --rick-color1: #a9f3fd;
+    --morty-color1: #fcf156;
+    
+    --Alive: #99ff00;
+    --Dead: #ff0000;
+    --unknown: #8c8a8a;
+
+    --status: var(--Alive);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cascadia Code';
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    flex: 1;
+    flex-shrink: initial;
+    flex-flow: row nowrap;
+}
+
+.options {
+    display: flex;
+    height: 100vh;
+    width: 15%;
+    background-color: var(--morty-color1);
+
+    flex-flow: column nowrap;
+    align-items: center;
+    
+}
+
+.options img {          
+    width: 200px;
+    height: 200px;
+    margin: 50px 0;
+}
+section.inputs {
+    position: absolute;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 20%;
+    justify-content: space-around;
+    top: calc(50%);
+    font-size: 24px;
+    
+}
+
+div input, div label {
+    cursor: pointer;
+}
+#random {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #f0f0f0;
+    border: 2px solid #555;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+#random:checked{
+    background-color: var(--rick-color1);
+}
+
+#grid {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #f0f0f0;
+    border: 2px solid #555;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+#grid:checked{
+    background-color: var(--rick-color1);
+    content: "checked";
+}
+
+.inputId {
+    width: 100%;
+    height: 4vh;
+    font-size: 15px;
+    border: none;
+    border-bottom: 4px solid var(--rick-color1);
+    background-color: transparent;
+    
+}
+
+.inputId:focus{
+    outline: none;
+}
+
+main {
+    display: flex;    
+    flex-flow: column;
+    height: 100vh;
+    width: 85%;    
+}
+
+header{
+    display: flex;
+    width: 100%;
+    color: var(--rick-color1);
+    height: 8vh;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-background-color);        
+}
+
+h1 {
+    display: flex;
+}
+
+h1 img {
+    margin: 0 20px;
+}
+
+.container{
+    display: flex;
+    flex-flow: column wrap;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    background-color: var(--secondary-background-color);
+    width: 30%;    
+    flex-flow: column nowrap;
+    align-items: center;    
+    padding: 25px 10px;
+    color: var(--rick-color1);
+    border-radius: 8px;
+    transition: all .18s ease-in-out;
+}
+.card:hover{
+    scale: 1.05;
+}
+
+.card p{
+    margin-top: 8px;
+}
+
+.card #status {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--status);
+    right: 15px;
+    top: 15px;
+    border-radius: 50%;
+
+    box-shadow:
+    0 0 5px var(--status), /* Inner glow */
+    0 0 10px var(--status), /* Middle glow */
+    0 0 20px var(--status), /* Outer glow */
+    0 0 40px var(--status); /* Far outer glow */
+    
+}
+.card img {
+    width: 80%;
+    aspect-ratio: 1;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+.getCharacter {
+    position: absolute;
+    bottom: 30px;
+    width: 200px;
+    height: 5vh;
+    background-color: var(--morty-color1);
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+.getCharacter:hover{
+    scale: 1.05;
+}

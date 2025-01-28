@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "target": "ES6", // Specify the target JavaScript version (e.g., ES5, ES6, ES2020)
+      "module": "ES6", // Specify the module system (e.g., commonjs, es2015, esnext)
+      "outDir": "./dist", // Output directory for compiled JavaScript files
+      "rootDir": "./src", // Root directory for TypeScript files
+      "strict": true, // Enable all strict type-checking options
+      "esModuleInterop": true, // Enable compatibility with ES modules
+      "skipLibCheck": true, // Skip type checking of declaration files
+      "forceConsistentCasingInFileNames": true, // Ensure consistent casing in file names      
+    },
+    "include": ["src/**/*"], // Include all files in the src directory
+    "exclude": ["node_modules"] // Exclude the node_modules directory
+  }
