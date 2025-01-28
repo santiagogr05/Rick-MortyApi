@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick & Morty API</title>
+    <link rel="stylesheet" href="index-styles.css">
+    <link rel="shortcut icon" href="./images/icons8-jerry-smith-96.png" type="image/x-icon">
+</head>
+<body>
+
+    <aside class="options">
+
+        <img src="./images/sondear-color.png" alt="">
+
+        <section class="inputs">
+            <div class="checkbox">
+                <input type="checkbox" name="random" id="random" checked>
+                <label for="random">Random</label>
+            </div>
+    
+            <div style="display: none;"s>
+                <input type="checkbox" name="grid" id="grid">
+                <label for="grid">Grid</label>
+            </div>
+            <div>
+                <input class="inputId" type="text" placeholder="Type a number (1 - 826)" value="">
+            </div>
+        </section>
+
+    </aside>
+
+    <main>
+
+        <header>
+            <h1> <img src="./images/morty-smith-color.png" alt="morty" width="40px" height="40px"> Rick & Morty API <img src="./images/rick-sanchez-color.png" alt="rick" width="40px" height="40px"></h1>
+        </header>
+
+        <section class="container">
+
+            <article class="card">
+                <div id="status"></div>
+                <img class="character-img" src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="Rick Sanchez">
+                <p>Name: <span class="name">Rick Sanchez</span></p>
+                <p>Specie: <span class="specie">Human</span></p>
+                <p>Gender: <span class="gender">Male</span></p>
+                <p>Location: <span class="location">Earth (c-137)</span></p>
+            </article>
+
+            <!-- <section class="grid-container" style="display: none;">
+                <article class="card">
+                    <div id="status"></div>
+                    <img class="character-img" src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="Rick Sanchez">
+                    <p class="name"></p>
+                    <p class="specie"></p>
+                    <p class="gender"></p>
+                    <p class="location"></p>
+                </article>
+
+                <article class="card">
+                    <div id="status"></div>
+                    <img class="character-img" src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="Rick Sanchez">
+                    <p class="name"></p>
+                    <p class="specie"></p>
+                    <p class="gender"></p>
+                    <p class="location"></p>
+                </article>
+
+                <article class="card">
+                    <div id="status"></div>
+                    <img class="character-img" src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="Rick Sanchez">
+                    <p class="name"></p>
+                    <p class="specie"></p>
+                    <p class="gender"></p>
+                    <p class="location"></p>
+                </article>
+
+                <article class="card">
+                    <div id="status"></div>
+                    <img class="character-img" src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="Rick Sanchez">
+                    <p class="name"></p>
+                    <p class="specie"></p>
+                    <p class="gender"></p>
+                    <p class="location"></p>
+                </article>
+
+                <article class="card">
+                    <div id="status"></div>
+                    <img class="character-img" src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="Rick Sanchez">
+                    <p class="name"></p>
+                    <p class="specie"></p>
+                    <p class="gender"></p>
+                    <p class="location"></p>
+                </article>
+
+                <article class="card">
+                    <div id="status"></div>
+                    <img class="character-img" src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="Rick Sanchez">
+                    <p class="name"></p>
+                    <p class="specie"></p>
+                    <p class="gender"></p>
+                    <p class="location"></p>
+                </article>
+
+            </section> -->
+
+            <button class="getCharacter">Get Character</button>
+
+        </section>
+
+    </main>
+    
+
+    <script type="module" src="./dist/index.js"></script>
+</body>
+</html>
