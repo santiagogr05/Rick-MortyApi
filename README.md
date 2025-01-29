@@ -2,6 +2,8 @@
 
 ## Github-Pages : https://santiagogr05.github.io/Rick-MortyApi/
 
+### Isn't responsive so try to open in bigger screen :)
+
   ## Technologies
   - HTMl
   - CSS
