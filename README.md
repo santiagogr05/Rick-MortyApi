@@ -1,4 +1,7 @@
 # Rick-MortyApi
+
+# Github-Pages : https://santiagogr05.github.io/Rick-MortyApi/
+
   ## Technologies
   - HTMl
   - CSS
